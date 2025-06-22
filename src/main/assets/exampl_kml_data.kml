@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+  <Style id="placemark-red">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-red.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-blue">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-blue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-purple">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-purple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-yellow">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-yellow.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-pink">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-pink.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-brown">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-brown.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-green">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-green.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-orange">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-orange.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeppurple">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-deeppurple.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lightblue">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-lightblue.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-cyan">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-cyan.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-teal">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-teal.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-lime">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-lime.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-deeporange">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-deeporange.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-gray">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-gray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="placemark-bluegray">
+    <IconStyle>
+      <Icon>
+        <href>/placemarks/placemark-bluegray.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <name>Lololololo</name>
+  <visibility>1</visibility>
+  <ExtendedData xmlns:mwm="">
+    <mwm:name>
+      <mwm:lang code="default">Lololololo</mwm:lang>
+    </mwm:name>
+    <mwm:annotation>
+    </mwm:annotation>
+    <mwm:description>
+    </mwm:description>
+    <mwm:lastModified>2025-06-11T11:08:05Z</mwm:lastModified>
+    <mwm:accessRules>Local</mwm:accessRules>
+  </ExtendedData>
+  <Placemark>
+    <name>Galaxy Alışveriş Merkezi</name>
+    <TimeStamp><when>2025-06-11T11:05:53Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.609141,39.98811,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Galaxy Alışveriş Merkezi</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>shop-mall</mwm:value>
+        <mwm:value>building</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Shop</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Map Point</name>
+    <TimeStamp><when>2025-06-11T11:05:56Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.602949,39.980079,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Map Point</mwm:lang>
+      </mwm:name>
+      <mwm:scale>13</mwm:scale>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Devlet Mahallesi/1910 Ankaragücü</name>
+    <TimeStamp><when>2025-06-11T11:06:00Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.613255,39.981528,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Devlet Mahallesi/1910 Ankaragücü</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>railway-station-subway-ankara</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Transport</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Ali Rıza Efendi Parkı</name>
+    <TimeStamp><when>2025-06-11T11:06:08Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.612303,39.974804,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Ali Rıza Efendi Parkı</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>leisure-park</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Park</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Hazreti Ebubekir Camii</name>
+    <TimeStamp><when>2025-06-11T11:06:15Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.601653,40.001525,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Hazreti Ebubekir Camii</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-place_of_worship-muslim</mwm:value>
+        <mwm:value>building</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Islam</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Sincan Dr. Nafiz Körez İlçe Devlet Hastanesi</name>
+    <TimeStamp><when>2025-06-11T11:06:23Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.585656,39.982438,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Sincan Dr. Nafiz Körez İlçe Devlet Hastanesi</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-hospital</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Medicine</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Opet Etimesgut</name>
+    <TimeStamp><when>2025-06-11T11:06:35Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.634801,39.991335,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Opet Etimesgut</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-fuel</mwm:value>
+        <mwm:value>amenity-compressed_air</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>13</mwm:scale>
+      <mwm:icon>Gas</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Harikalar Diyarı</name>
+    <TimeStamp><when>2025-06-11T11:06:46Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.588766,39.980632,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Harikalar Diyarı</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>tourism-theme_park</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Entertainment</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Evcil Hayvanlar Parkı</name>
+    <TimeStamp><when>2025-06-11T11:07:01Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.586874,39.973596,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Evcil Hayvanlar Parkı</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>tourism-zoo</mwm:value>
+        <mwm:value>landuse-grass</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Animals</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Mangal Kebap</name>
+    <TimeStamp><when>2025-06-11T11:07:08Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.585891,39.965563,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Mangal Kebap</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-restaurant</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Food</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Lale</name>
+    <TimeStamp><when>2025-06-11T11:07:14Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.598776,39.961513,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Lale</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>railway-station</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Transport</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Kahveci Hacıbaba</name>
+    <TimeStamp><when>2025-06-11T11:07:24Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.612548,39.951021,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Kahveci Hacıbaba</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-cafe</mwm:value>
+        <mwm:value>building</mwm:value>
+        <mwm:value>cuisine-coffee_shop</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Cafe</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Elvankent Düğün Sarayı</name>
+    <TimeStamp><when>2025-06-11T11:07:29Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.61312,39.949086,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Elvankent Düğün Sarayı</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-community_centre</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>21 C</name>
+    <TimeStamp><when>2025-06-11T11:07:41Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.630904,39.97545,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">21 C</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>historic-memorial</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Sights</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Domino's Pizza</name>
+    <TimeStamp><when>2025-06-11T11:07:46Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.635788,39.968048,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Domino's Pizza</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>amenity-fast_food</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Food</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Theatre</name>
+    <TimeStamp><when>2025-06-11T11:07:59Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.645413,39.98929,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:featureTypes>
+        <mwm:value>amenity-theatre</mwm:value>
+        <mwm:value>building</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Theatre</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+  <Placemark>
+    <name>Evinora</name>
+    <TimeStamp><when>2025-06-11T11:08:05Z</when></TimeStamp>
+    <styleUrl>#placemark-red</styleUrl>
+    <Point><coordinates>32.645725,39.995989,0</coordinates></Point>
+    <ExtendedData xmlns:mwm="">
+      <mwm:name>
+        <mwm:lang code="default">Evinora</mwm:lang>
+      </mwm:name>
+      <mwm:featureTypes>
+        <mwm:value>historic-monument</mwm:value>
+      </mwm:featureTypes>
+      <mwm:scale>14</mwm:scale>
+      <mwm:icon>Sights</mwm:icon>
+      <mwm:visibility>1</mwm:visibility>
+    </ExtendedData>
+  </Placemark>
+</Document>
+</kml>

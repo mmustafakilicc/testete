@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mn_org_map_bg_clickable_card"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/margin_half_plus"
+    android:paddingStart="@dimen/margin_quarter"
+    android:paddingEnd="@dimen/dp_0">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/nav_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:tint="?colorAccent"
+        tools:srcCompat="@drawable/mn_org_map_ic_import" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@string/mn_org_map_robotoMedium"
+        android:textAllCaps="true"
+        android:textAppearance="@style/MwmTextAppearance.Body3"
+        android:textColor="?colorAccent"
+        tools:text="Some text should go here" />
+</LinearLayout>

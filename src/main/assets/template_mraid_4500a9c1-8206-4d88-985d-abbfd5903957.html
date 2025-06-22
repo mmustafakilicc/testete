@@ -1,0 +1,247 @@
+<!-- VIDEO REWARDED 101-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AFA Video Ad</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-color: black;
+            margin:0px;
+            padding:0px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+<script src="mraid.js"></script>
+<div id="ad_container" style="width:100%;height:100%;background-color:black;text-align:center;">
+    <video id="ad_video" onclick="mraid.open('[@CLICK_URL]')" style=";margin:0 auto;" poster="noposter" src="[@MAIN_ASSET]" webkit-playsinline></video>
+    <progress style="width:100%;height:7px;opacity:1;padding:0px;margin:0px;" value="0" max="100" id="progressBar"></progress>
+</div>
+
+<div id="end_card_container_landscape" style="width:100%;height:100%;background-color:white;text-align:center;margin: 0 auto;position:relative;display:none;">
+    <img id="end_card_image_landscape" height="100%" style="display:table-cell;top:0px;left:0px;" src="[@END_CARD_IMAGE]" onclick="javascript:mraid.open('[@CLICK_URL]');"/>
+    <div style="display:table-cell;width:50%;vertical-align:middle;">
+        <img onclick="afaClicked()" width="70px" style="margin:10px;border-radius: 10%;" src="[@ICON_IMAGE]" onclick="javascript:mraid.open('[@CLICK_URL]');"/>
+        <p style="text-color:black;font-size:18px;padding:10px;font-weight:bold;">[@TITLE_TEXT]</p>
+        <p style="text-color:black;font-size:16px;padding:10px;">[@DESCRIPTION_TEXT]</p>
+        <button onclick="mraid.open('[@CLICK_URL]')" style="font-size:20px;margin:10px;padding:10px 40px;color:white;background-color:green;border:0;border-radius: 10%;">[@CTA_TEXT]</button>
+    </div>
+
+</div>
+
+<div id="end_card_container" style="width:100%;height:100%;background-color:white;text-align:center;margin: 0 auto;position:relative;display:none;">
+    <div style="width:100%; height:50%; overflow:hidden;">
+        <img id="end_card_image" width="100%" style="top:0px;left:0px;" src="[@END_CARD_IMAGE]" onclick="javascript:mraid.open('[@CLICK_URL]');"/>
+    </div>
+    <img onclick="afaClicked()" width="70px" style="margin-top:20px;border-radius: 10%;" src="[@ICON_IMAGE]" onclick="javascript:mraid.open('[@CLICK_URL]');"/>
+    <p style="text-color:black;font-size:18px;padding:10px;font-weight:bold;">[@TITLE_TEXT]</p>
+    <p style="text-color:black;font-size:16px;padding:10px;">[@DESCRIPTION_TEXT]</p>
+    <button onclick="mraid.open('[@CLICK_URL]')" style="font-size:20px;margin:10px;padding:10px 40px;color:white;background-color:green;border:0;border-radius: 10%;">[@CTA_TEXT]</button>
+
+</div>
+
+<script type="text/javascript">
+    var videoElement = document.getElementById("ad_video");
+    var adContainerElement = document.getElementById("ad_container");
+    var endCardContainerElement = document.getElementById("end_card_container");
+    var endCardContainerLandscapeElement = document.getElementById("end_card_container_landscape");
+    var endCardImageLandscapeElement = document.getElementById("end_card_image_landscape");
+
+    videoElement.load();
+
+    videoElement.addEventListener('canplaythrough', function() {
+        preloaded();
+    }, false);
+
+    function preloaded() {
+	    window.location = "afa://preloadComplete/";
+	}
+
+    var screenWidth = 0;
+    var screenHeight = 0;
+
+    function mraidIsReady() {
+		mraid.removeEventListener("ready", mraidIsReady);
+		prepareMyAd();
+	}
+
+	function prepareMyAd() {
+
+		if(mraid.supports("inlineVideo")) {
+			mraid.useCustomClose(false);
+		}
+
+		mraid.setOrientationProperties({
+			"allowOrientationChange": false
+		});
+
+		var screenSize = mraid.getMaxSize();
+		screenWidth = screenSize.width;
+		screenHeight = screenSize.height;
+
+		adContainerElement.style.width = screenWidth + "px";
+		adContainerElement.style.height = screenHeight + "px";
+
+		endCardContainerElement.style.width = screenWidth + "px";
+		endCardContainerElement.style.height = screenHeight + "px";
+
+		endCardContainerLandscapeElement.style.width = screenWidth + "px";
+		endCardContainerLandscapeElement.style.height = screenHeight + "px";
+
+		endCardImageLandscapeElement.style.height = screenHeight + "px";
+
+		// First video to fit full width and and then scale height
+
+        arrangeVideoSize();
+
+		// See if ad is visible yet otherwise wait for it to be visible.
+
+		if(!mraid.isViewable()) {
+			mraid.addEventListener("viewableChange", isInterstitialDisplayed);
+		} else {
+			showMyAd();
+		}
+	}
+
+	function arrangeVideoSize() {
+
+	    var videoWidth = videoElement.videoWidth;
+        var videoHeight = videoElement.videoHeight;
+
+/*
+        consolelog("vw-" + videoWidth);
+        consolelog("vh-" + videoHeight);
+        consolelog("sw-" + screenWidth);
+        consolelog("sh-" + screenHeight);
+*/
+		var videoRatio = videoWidth / videoHeight;
+		var newWidth = videoWidth;
+		var newHeight = videoHeight;
+
+		if(videoWidth > screenWidth) {
+			newWidth = screenWidth;
+			newHeight = newWidth / videoRatio;
+		} else {
+			newWidth = Math.max(screenWidth, videoWidth);
+			newHeight = newWidth / videoRatio;
+		}
+
+		if(newHeight > screenHeight) {
+			videoRatio = videoHeight / videoWidth;
+			newHeight = screenHeight;
+			newWidth = newHeight / videoRatio;
+		}
+
+		videoElement.style.width = newWidth + "px";
+		videoElement.style.height = newHeight + "px";
+
+        videoElement.style.marginTop = ((screenHeight - newHeight) / 2) + "px";
+	}
+
+	function isInterstitialDisplayed(displayed) {
+		if(displayed) {
+            //mraid.removeEventListener("viewableChange", isInterstitialDisplayed);
+			if (videoElement.currentTime <= 0) {
+			    showMyAd();
+			}
+			else {
+			    videoElement.play();
+			}
+		}
+	}
+
+	function isSoundMuted(isMuted) {
+	    videoElement.muted = isMuted;
+	}
+
+	function showMyAd() {
+		// Count impressions at this point and play video ad
+		//videoElement.load();
+		videoElement.play();
+		videoElement.muted = mraid.isMuted();
+		mraid.addEventListener("soundChange", isSoundMuted);
+		// If we can play inline then we can auto close the ad on finish
+		if(mraid.supports("inlineVideo")) {
+		    updateVideoInfo();
+
+			// Close video on finish
+			videoElement.addEventListener('ended', function() {
+			    showEndCard();
+			});
+
+			videoElement.addEventListener('playing', function() {
+			    if (!mraid.isViewable()) {
+			        videoElement.pause();
+			    }
+
+			});
+
+			videoElement.addEventListener('timeupdate', function() {
+			    updateVideoInfo();
+			    // complete, total duration and elapsed time information have to be passed to the java layer
+			});
+		}
+	}
+
+	function updateVideoInfo() {
+	    window.location = "afa://videoevent/currenttime/" + videoElement.currentTime + "/duration/" + videoElement.duration;
+	    document.getElementById("progressBar").setAttribute("value", (videoElement.currentTime).toString());
+        document.getElementById("progressBar").setAttribute("max", (videoElement.duration).toString());
+
+	}
+
+	function setupViewport(width) {
+		var element = document.querySelector("meta[name=viewport]");
+		if(!element) {
+			element = document.createElement("meta");
+			element.name = "viewport";
+			element.content = "width=" + width + ", user - scalable = no ";
+			document.getElementsByTagName('head')[0].appendChild(element);
+		} else {
+			element.content = "width=" + width + ", user - scalable = no ";
+		}
+	}
+	//setupViewport(320);
+
+	function doReadyCheck() {
+		if(mraid.getState() == 'loading') {
+			mraid.addEventListener("ready", mraidIsReady);
+		} else {
+			prepareMyAd();
+		}
+	}
+
+	function showEndCard() {
+        adContainerElement.style.display = 'none';
+        adContainerElement.innerHTML = '';
+        videoElement.src = "";
+
+        var isPortrait = (window.orientation == 0) || (window.orientation == 180);
+
+        if (isPortrait) {
+            endCardContainerElement.style.display = '';
+        } else {
+            endCardContainerLandscapeElement.style.display = 'table';
+        }
+	}
+
+	doReadyCheck();
+
+
+	function consolelog(value) {
+	    window.location = "afa://consolelog/" + value;
+	}
+
+</script>
+</body>
+
+</html>

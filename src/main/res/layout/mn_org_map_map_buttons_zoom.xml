@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/zoom_buttons_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/nav_zoom_in"
+        android:layout_width="@dimen/map_button_size"
+        android:layout_height="@dimen/map_button_size_large"
+        android:background="@drawable/mn_org_map_bg_zoom_plus"
+        android:src="@drawable/mn_org_map_ic_plus"
+        app:tint="?attr/iconTint"
+        android:padding="8dp"
+        tools:ignore="ContentDescription" />
+    <View
+        android:layout_width="@dimen/map_button_size"
+        android:layout_height="1dp"
+        android:background="?attr/iconTintLight"/>
+    <ImageView
+        android:id="@+id/nav_zoom_out"
+        android:layout_width="@dimen/map_button_size"
+        android:layout_height="@dimen/map_button_size_large"
+        android:padding="8dp"
+        android:background="@drawable/mn_org_map_bg_zoom_minus"
+        android:src="@drawable/mn_org_map_ic_minus"
+        app:tint="?attr/iconTint"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/track_recording_status"
+    style="@style/MwmWidget.MapButton"
+    android:tint="@color/mn_org_map_accent_color_selector"
+    app:srcCompat="@drawable/mn_org_map_ic_track_recording_status"
+    tools:ignore="ContentDescription" />

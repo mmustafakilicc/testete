@@ -1,0 +1,130 @@
+<!-- IMAGE INTERSTITIAL 101 -->
+<script src="mraid.js"></script>
+
+<div id="adContainer" style="width:100%;margin:0px;padding:0px;background-color:#000;vertical-align:middle;text-align:center;">
+    <img id="main_image" width="100%" src="[@MAIN_ASSET]" onclick="javascript:mraid.open('[@CLICK_URL]');"/>
+</div>
+
+<style type="text/css">
+body
+{
+    display:block;
+	background-color:#FFFFFF;
+	width:100%;
+	margin:0;
+}
+</style>
+
+<script>
+function mraidIsReady()
+{
+	mraid.removeEventListener("ready", mraidIsReady);
+
+	prepareMyAd();
+
+}
+
+function prepareMyAd()
+{
+	if (!mraid.isViewable())
+	{
+		mraid.addEventListener("viewableChange", isInterstitialDisplayed);
+	}
+	else
+	{
+		showMyAd();
+	}
+}
+
+function makeImageFullScreen() {
+
+    var obj = document.getElementById("main_image");
+	var objW = obj.clientWidth;
+	var objH = obj.clientHeight;
+
+
+    var screenSize = mraid.getMaxSize();
+    var screenW = screenSize.width;
+    var screenH = screenSize.height;
+
+    document.getElementById("adContainer").style.width = (screenW+1) + "px";
+	document.getElementById("adContainer").style.height = screenH + "px";
+
+	var objRatio = objW / objH;
+
+	var newW = objW;
+	var newH = objH;
+
+    if(objW > screenW) {
+        newW = screenW;
+        newH = newW / objRatio;
+    } else {
+        newW = Math.max(screenW, objW);
+        newH = newW / objRatio;
+    }
+    // If scaled height too big then scale back until it fits
+
+    if(newH > screenH) {
+        newH = screenH;
+        newW = newH * objRatio;
+    }
+
+    obj.style.width = newW + "px";
+    obj.style.height = newH + "px";
+
+}
+
+function isInterstitialDisplayed(displayed)
+{
+	if (displayed)
+	{
+	    mraid.setOrientationProperties({
+			"allowOrientationChange": false
+		});
+	    makeImageFullScreen();
+		mraid.removeEventListener("viewableChange", isInterstitialDisplayed);
+		showMyAd();
+	}
+}
+
+function showMyAd()
+{
+
+    // Count impressions at this point and display ad
+	var el = document.getElementById("adContainer");
+    el.style.display = 'table-cell';
+}
+
+function setupViewport(width)
+{
+	var element = document.querySelector("meta[name=viewport]");
+	if (!element)
+	{
+		element = document.createElement("meta");
+		element.name = "viewport";
+		element.content = "width=" + width + ", user-scalable=no";
+		document.getElementsByTagName('head')[0].appendChild(element);
+	}
+	else
+	{
+		element.content = "width=" + width + ", user-scalable=no";
+	}
+}
+setupViewport(320);
+
+function doReadyCheck()
+{
+	if (mraid.getState() == 'loading')
+	{
+		mraid.addEventListener("ready", mraidIsReady);
+	}
+	else
+	{
+		prepareMyAd();
+	}
+}
+
+doReadyCheck();
+window.location = "afa://preloadComplete/";
+
+</script>

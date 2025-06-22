@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MwmWidget.Floating"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/mn_org_map_routing_plan" />
+
+    <include
+        layout="@layout/mn_org_map_altitude_chart_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/mn_org_map_routing_bottom_panel_transit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/routing_action_frame"
+        layout="@layout/mn_org_map_routing_action_panel"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_base"
+        android:paddingTop="@dimen/margin_half_plus"
+        android:paddingEnd="@dimen/margin_base"
+        android:paddingBottom="@dimen/margin_half_plus"
+        android:textAppearance="@style/MwmTextAppearance.Body3"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?dividerHorizontal" />
+
+    <include
+        layout="@layout/mn_org_map_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Preference
+        android:key="@string/mn_org_map_pref_osm_profile"
+        android:order="1"
+        android:title="@string/profile"
+        app:singleLineTitle="false"
+        tools:summary="LongLongUsernameHere" />
+    <androidx.preference.PreferenceCategory
+        android:key="@string/mn_org_map_pref_settings_general"
+        android:order="2"
+        android:title="@string/prefs_group_general">
+        <ListPreference
+            android:entries="@array/measument_units"
+            android:entryValues="@array/measument_units_values"
+            android:key="@string/mn_org_map_pref_munits"
+            android:order="1"
+            android:summary="@string/measurement_units_summary"
+            android:title="@string/measurement_units"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:key="@string/mn_org_map_pref_show_zoom_buttons"
+            android:order="2"
+            android:summary="@string/pref_zoom_summary"
+            android:title="@string/pref_zoom_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:key="@string/mn_org_map_pref_3d_buildings"
+            android:order="3"
+            android:title="@string/pref_map_3d_buildings_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:key="@string/mn_org_map_pref_autodownload"
+            android:order="4"
+            android:title="@string/autodownload"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/mn_org_map_pref_large_fonts_size"
+            android:order="6"
+            android:title="@string/big_font"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/mn_org_map_pref_transliteration"
+            android:order="7"
+            android:title="@string/transliteration_title"
+            app:singleLineTitle="false" />
+        <Preference
+            android:key="@string/mn_org_map_pref_storage"
+            android:order="8"
+            android:summary="@string/maps_storage_summary"
+            android:title="@string/maps_storage"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/mn_org_map_pref_enable_logging"
+            android:order="12"
+            android:summary="@string/enable_logging_warning_message"
+            android:title="@string/enable_logging"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/mn_org_map_pref_emulate_bad_external_storage"
+            android:order="13"
+            android:title="@string/setting_emulate_bad_storage"
+            app:isPreferenceVisible="false"
+            app:singleLineTitle="false" />
+        <ListPreference
+            android:entries="@array/mobile_data_options"
+            android:entryValues="@array/mobile_data_options_values"
+            android:key="@string/mn_org_map_pref_use_mobile_data"
+            android:order="14"
+            android:summary="@string/mobile_data_description"
+            android:title="@string/mobile_data"
+            app:singleLineTitle="false" />
+        <ListPreference
+            android:entries="@array/power_management_scheme"
+            android:entryValues="@array/power_management_scheme_values"
+            android:key="@string/mn_org_map_pref_power_management"
+            android:order="15"
+            android:summary="@string/power_managment_description"
+            android:title="@string/power_managment_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="@string/mn_org_map_pref_keep_screen_on"
+            android:order="16"
+            android:summary="@string/enable_keep_screen_on_description"
+            android:title="@string/enable_keep_screen_on"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/mn_org_map_pref_show_on_lock_screen"
+            android:order="17"
+            android:summary="@string/enable_show_on_lock_screen_description"
+            android:title="@string/enable_show_on_lock_screen"
+            app:singleLineTitle="false" />
+        <Preference
+            android:key="@string/mn_org_map_pref_map_locale"
+            android:order="18"
+            android:persistent="false"
+            android:title="@string/change_map_locale"
+            app:singleLineTitle="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:key="@string/mn_org_map_pref_navigation"
+        android:order="3"
+        android:title="@string/prefs_group_route">
+        <ListPreference
+            android:entries="@array/map_style"
+            android:entryValues="@array/map_style_values"
+            android:key="@string/mn_org_map_pref_map_style"
+            android:order="1"
+            android:title="@string/pref_map_style_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:key="@string/mn_org_map_pref_3d"
+            android:order="2"
+            android:title="@string/pref_map_3d_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:key="@string/mn_org_map_pref_auto_zoom"
+            android:order="3"
+            android:title="@string/pref_map_auto_zoom"
+            app:singleLineTitle="false" />
+      <Preference
+          android:key="@string/mn_org_map_pref_tts_screen"
+          android:order="4"
+          android:persistent="false"
+          android:title="@string/pref_tts_enable_title"
+          app:singleLineTitle="false" />
+        <PreferenceScreen
+            android:key="@string/mn_org_map_prefs_routing"
+            android:order="5"
+            android:title="@string/driving_options_title">
+            <intent
+                android:targetClass="org.greenrobot.organicmaps.settings.DrivingOptionsActivity"
+                android:targetPackage="@string/app_id">
+                <extra android:name="from" android:value="settings" />
+            </intent>
+        </PreferenceScreen>
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory
+        android:key="@string/mn_org_map_pref_privacy"
+        android:order="6"
+        android:title="@string/privacy">
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/mn_org_map_pref_play_services"
+            android:order="1"
+            android:summary="@string/pref_use_google_play"
+            android:title="@string/google_play_services"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/mn_org_map_pref_search_history"
+            android:order="2"
+            android:title="@string/search_history_title"
+            app:singleLineTitle="false" />
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/mn_org_map_pref_display_kayak"
+            android:order="3"
+            android:summary="@string/pref_display_kayak_text"
+            android:title="@string/pref_display_kayak_title"
+            app:singleLineTitle="false" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

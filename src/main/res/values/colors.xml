@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Text colors -->
+  <color name="mn_org_map_text_dark">@color/mn_org_map_black_primary</color>
+  <color name="mn_org_map_text_dark_subtitle">@color/mn_org_map_black_secondary</color>
+  <color name="mn_org_map_text_dark_hint">@color/mn_org_map_black_38</color>
+  <color name="mn_org_map_text_light">@color/mn_org_map_white_primary</color>
+  <color name="mn_org_map_text_light_subtitle">@color/mn_org_map_white_secondary</color>
+  <color name="mn_org_map_text_light_hint">@color/mn_org_map_white_lightest</color>
+
+  <color name="mn_org_map_base_accent">#FF249CF2</color>
+  <color name="mn_org_map_base_accent_night">#FF4BB9E6</color>
+  <color name="mn_org_map_base_accent_pressed">#FF1C85D6</color>
+  <color name="mn_org_map_base_accent_pressed_night">#FF3C9BBE</color>
+  <color name="mn_org_map_base_accent_transparent">#1E249CF2</color>
+
+  <color name="mn_org_map_base_red">#FFF54137</color>
+  <color name="mn_org_map_dark_red">#F51E30</color>
+  <color name="mn_org_map_base_yellow">#FFFFC30A</color>
+  <color name="mn_org_map_base_green">#FF558B2F</color>
+  <color name="mn_org_map_light_green">#2D8953</color>
+  <color name="mn_org_map_driving_options_bg_black">#25282B</color>
+
+  <color name="mn_org_map_black_primary">#DE000000</color>   <!-- 87% black -->
+  <color name="mn_org_map_black_secondary">#8A000000</color> <!-- 54% black -->
+  <color name="mn_org_map_black_4">#0A000000</color> <!-- 4% black -->
+  <color name="mn_org_map_black_8">#14000000</color> <!-- 8% black -->
+  <color name="mn_org_map_black_11">#1C000000</color> <!-- 11% black -->
+  <color name="mn_org_map_black_12">#1E000000</color> <!-- 12% black -->
+  <color name="mn_org_map_black_16">#29000000</color> <!-- 16% black -->
+  <color name="mn_org_map_black_20">#33000000</color> <!-- 20% black -->
+  <color name="mn_org_map_black_24">#3D000000</color> <!-- 24% black -->
+  <color name="mn_org_map_black_38">#61000000</color>  <!-- 38% black -->
+  <color name="mn_org_map_black_40">#66000000</color>  <!-- 40% black -->
+  <color name="mn_org_map_black_50">#80000000</color> <!-- 50% black -->
+  <color name="mn_org_map_black_54">#8A000000</color> <!-- 54% black -->
+  <color name="mn_org_map_black_60">#99000000</color> <!-- 60% black -->
+  <color name="mn_org_map_white_primary">#FFFFFFFF</color>   <!-- 100% white -->
+  <color name="mn_org_map_white_secondary">#B3FFFFFF</color> <!-- 70% white -->
+  <color name="mn_org_map_white_lightest">#4CFFFFFF</color>  <!-- 50% white -->
+  <color name="mn_org_map_white_4">#0AFFFFFF</color> <!-- 4% white -->
+  <color name="mn_org_map_white_8">#14FFFFFF</color> <!-- 8% white -->
+  <color name="mn_org_map_white_11">#1CFFFFFF</color> <!-- 11% white -->
+  <color name="mn_org_map_white_12">#1EFFFFFF</color> <!-- 12% white -->
+  <color name="mn_org_map_white_16">#29FFFFFF</color> <!-- 16% white -->
+  <color name="mn_org_map_white_20">#33FFFFFF</color> <!-- 20% white -->
+  <color name="mn_org_map_white_24">#3DFFFFFF</color> <!-- 24% white -->
+  <color name="mn_org_map_white_38">#61FFFFFF</color>  <!-- 38% white -->
+  <color name="mn_org_map_white_40">#66FFFFFF</color>  <!-- 40% white -->
+  <color name="mn_org_map_white_54">#8AFFFFFF</color> <!-- 54% black -->
+  <color name="mn_org_map_white_60">#99FFFFFF</color> <!-- 60% white -->
+  <color name="mn_org_map_dark_gray">#8B000000</color>
+  <color name="mn_org_map_light_gray">#F5F5F5</color>
+  <color name="mn_org_map_extended_green">#3C8C3C</color>
+
+  <color name="mn_org_map_icon_tint">#FF757575</color>
+  <color name="mn_org_map_icon_tint_night">#FFC4C6C7</color>
+
+  <color name="mn_org_map_icon_tint_light">#FFBDBDBD</color>
+  <color name="mn_org_map_icon_tint_light_night">#FF76797C</color>
+
+  <color name="mn_org_map_divider">#1E000000</color>
+  <color name="mn_org_map_divider_night">#1EFFFFFF</color>
+  
+  <color name="mn_org_map_logo">#006C35</color>
+
+  <!-- Backgrounds -->
+  <color name="mn_org_map_bg_window">#FFEEEEEE</color>
+  <color name="mn_org_map_bg_window_night">#FF32363A</color>
+  <color name="mn_org_map_bg_primary">#006C35</color>
+  <color name="mn_org_map_bg_primary_night">#1E2226</color>
+  <color name="mn_org_map_bg_cards">@android:color/white</color>
+  <color name="mn_org_map_bg_cards_night">#FF3C4044</color>
+  <color name="mn_org_map_bg_panel">@color/mn_org_map_bg_window</color>
+  <color name="mn_org_map_bg_panel_night">@color/mn_org_map_bg_window_night</color>
+  <color name="mn_org_map_bg_primary_dark">#197841</color>
+  <color name="mn_org_map_bg_primary_dark_night">#14181C</color>
+
+  <color name="mn_org_map_bg_dialog_translucent">#BB000000</color>
+  <color name="mn_org_map_bg_text_translucent">#99FFFFFF</color>
+
+  <color name="mn_org_map_bg_menu">#99FFFFFF</color>
+  <color name="mn_org_map_bg_menu_night">#AA2D3237</color>
+
+  <color name="mn_org_map_bg_statusbar">#004120</color>
+  <color name="mn_org_map_bg_statusbar_translucent">#66000000</color>
+  <color name="mn_org_map_bg_statusbar_night">#121417</color>
+
+  <!-- Buttons -->
+  <color name="mn_org_map_button_normal">#00000000</color>
+  <color name="mn_org_map_button_normal_night">#00000000</color>
+  <color name="mn_org_map_button_pressed">#66999999</color>
+  <color name="mn_org_map_button_pressed_night">#40CCCCCC</color>
+  <color name="mn_org_map_button_disabled">#00000000</color>
+  <color name="mn_org_map_button_disabled_night">@color/mn_org_map_white_12</color>
+  <color name="mn_org_map_button_text">#FF000000</color>
+  <color name="mn_org_map_button_text_night">#FFFFFFFF</color>
+  <color name="mn_org_map_button_text_disabled">#42000000</color>
+  <color name="mn_org_map_button_text_disabled_night">#4CFFFFFF</color>
+
+  <color name="mn_org_map_button_accent_normal">@color/mn_org_map_base_accent</color>
+  <color name="mn_org_map_button_accent_normal_night">@color/mn_org_map_base_accent_night</color>
+  <color name="mn_org_map_button_accent_pressed">#FF1C85D6</color>
+  <color name="mn_org_map_button_accent_pressed_night">#FF3C9BBE</color>
+  <color name="mn_org_map_button_accent_disabled">@color/mn_org_map_black_12</color>
+  <color name="mn_org_map_button_accent_disabled_night">#FF505050</color>
+  <color name="mn_org_map_button_accent_text">#FFFFFFFF</color>
+  <color name="mn_org_map_button_accent_text_night">#FF000000</color>
+  <color name="mn_org_map_button_accent_text_disabled">#42000000</color>
+  <color name="mn_org_map_button_accent_text_disabled_night">#4CFFFFFF</color>
+
+  <color name="mn_org_map_button_red">@color/mn_org_map_button_red_normal</color>
+  <color name="mn_org_map_button_red_normal">@color/mn_org_map_base_red</color>
+  <color name="mn_org_map_button_red_pressed">#FFC22219</color>
+  <color name="mn_org_map_button_red_disabled">#FFB9332B</color>
+  <color name="mn_org_map_button_red_text">#FFFFFFFF</color>
+  <color name="mn_org_map_button_red_text_disabled">#FF606060</color>
+
+  <!-- Routing-->
+  <color name="mn_org_map_bg_routing_progress">#1F000000</color>
+  <color name="mn_org_map_routing_button_tint">#FFFFFFFF</color>
+  <color name="mn_org_map_routing_button_activated_tint">@color/mn_org_map_bg_statusbar</color>
+  <color name="mn_org_map_routing_button_activated_tint_night">@color/mn_org_map_bg_statusbar_night</color>
+  <color name="mn_org_map_routing_button_pressed_tint">#80FFFFFF</color>
+
+  <!-- LanesView -->
+  <color name="mn_org_map_nav_lane_arrow_active_light">@color/mn_org_map_white_primary</color>
+  <color name="mn_org_map_nav_lane_arrow_active_night">@color/mn_org_map_black_primary</color>
+  <color name="mn_org_map_nav_lane_arrow_inactive_light">@color/mn_org_map_black_20</color>
+  <color name="mn_org_map_nav_lane_arrow_inactive_night">@color/mn_org_map_black_20</color>
+
+  <!-- Editor -->
+  <color name="mn_org_map_bg_editor_light">#FFF2F6F6</color>
+  <color name="mn_org_map_bg_editor_light_pressed">#3D000000</color>
+
+  <color name="mn_org_map_notification">@color/mn_org_map_bg_primary</color>
+  <color name="mn_org_map_yellow">#FFC800</color>
+
+  <color name="mn_org_map_elevation_profile_dot_enabled">#FF9600</color>
+  <color name="mn_org_map_elevation_profile">#1E96F0</color>
+  <color name="mn_org_map_elevation_profile_dark">#4BB9E6</color>
+
+  <color name="mn_org_map_material_calendar_surface_dark">#929292</color>
+  <color name="mn_org_map_notification_warning">#FFC22219</color>
+</resources>
